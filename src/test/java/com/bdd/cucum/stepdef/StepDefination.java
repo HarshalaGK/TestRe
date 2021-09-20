@@ -13,6 +13,7 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import java.util.Arrays;
 import io.cucumber.datatable.DataTable;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.Locale;
@@ -212,15 +213,19 @@ public class StepDefination {
    Assert.assertEquals(kk,cha);
    driver.findElement(By.xpath("(//a[@title='Dresses'][normalize-space()='Dresses'])[2]")).click();
     }
-    @Then("user get price of dresses")
-    public void user_get_price_of_dresses(DataTable expectedCucumberTable) {
-        List<Float> price = expectedCucumberTable.asList(float.class);
-       // List<WebElement> hh = driver.findElements(By.xpath("//span[@itemprop='price']"));
-        for(int i =0;i<4;i++) {
+
+    @And("user get price of dresses")
+    public void userGetPriceOfDresses(DataTable expectedCucumberTable) {
+        List<String> yourDetails = expectedCucumberTable.asList(double.class);
+        List<WebElement> hh = driver.findElements(By.xpath("//div[@class='right-block']//div[@class='content_price']/span[@class='price product-price']"));
+        double sum= 0;
+        for(int i =0;i<hh.size();i++) {
+            System.out.println(hh.get(i).getText());
+            String s = hh.get(i).getText().replace("$","");
+            sum = sum + Double.parseDouble(s);
+            System.out.println(sum);
         }
-        float pvalue = driver.get(i).findElement(By.xpath("//span[@itemprop='price'").
-            //String elementText = hh.get(i).getText();
-            System.out.println();
+        Assert.assertEquals("not match",sum,yourDetails.get(1));
 
     }
-    }
+}

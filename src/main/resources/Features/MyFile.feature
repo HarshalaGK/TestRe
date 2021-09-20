@@ -102,6 +102,5 @@ Feature: Test the e-commerce app landing page for smoke test
     And User clicks on sign in button
     Then user is able to see "DRESSES" option
     And user get price of dresses
-    |28.90+50.99+30.50+16.40=126.87|
-
+      | 152.87 |
     And user close the browser
