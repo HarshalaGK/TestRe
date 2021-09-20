@@ -1,0 +1,182 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-16T12:30:05.346Z",
+        "line": 95,
+        "name": "product price total test",
+        "description": "",
+        "id": "test-the-e-commerce-app-landing-page-for-smoke-test;product-price-total-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "User open the browser",
+            "match": {
+              "location": "com.bdd.cucum.stepdef.StepDefination.user_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "user maximixe the browser",
+            "match": {
+              "location": "com.bdd.cucum.stepdef.StepDefination.user_maximixe_the_browser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "user open the Url \"http://automationpractice.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.bdd.cucum.stepdef.StepDefination.user_open_the_url(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "com.bdd.cucum.stepdef.StepDefination.user_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "User enter his registered id \"ghkolhe@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ghkolhe@gmail.com\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.bdd.cucum.stepdef.StepDefination.user_enter_his_registered_id(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "User enters his password \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.bdd.cucum.stepdef.StepDefination.user_enters_his_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "com.bdd.cucum.stepdef.StepDefination.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "user is able to see \"DRESSES\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DRESSES\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.bdd.cucum.stepdef.StepDefination.user_is_able_to_see_option(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 104,
+            "name": "user get price of dresses",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "28.90+50.99+30.50+16.40\u003d126.87"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 107,
+            "name": "user close the browser",
+            "match": {
+              "location": "com.bdd.cucum.stepdef.StepDefination.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@Pricetotal"
+          }
+        ]
+      }
+    ],
+    "name": "Test the e-commerce app landing page for smoke test",
+    "description": "  1. URL redirection\n  2. Landing page title test\n  3. Application logo display test\n  4. Create an account",
+    "id": "test-the-e-commerce-app-landing-page-for-smoke-test",
+    "keyword": "Feature",
+    "uri": "classpath:features/MyFile.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
